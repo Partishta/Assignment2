@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_margin="@dimen/primary_margin"
+        android:padding="@dimen/primary_padding"
+        android:text="Log in your \n account"
+        android:textSize="36sp"/>
+
+    <EditText
+        android:id="@+id/eMail"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_margin="@dimen/primary_margin"
+        android:ems="10"
+        android:hint="Enter Your E-Mail ID"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/primary_padding"
+        android:textSize="24sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/primary_margin"
+            android:padding="@dimen/primary_padding"
+            android:lineSpacingExtra="30sp"
+            android:textSize="24sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/primary_margin"
+        android:padding="@dimen/primary_padding"
+        android:soundEffectsEnabled="true"
+        android:text="Login"
+        android:textSize="24sp"
+        android:background="@drawable/login_button"
+        android:textColor="@color/colorWhite"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/secondary_padding"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't Have an Account Register" />
+    </LinearLayout>
+
+</LinearLayout>

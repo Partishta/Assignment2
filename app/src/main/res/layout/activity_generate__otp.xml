@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".GenerateOtp">
+
+    <ImageButton
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/otpVerification"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="OTP Verification"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:text="Enter the verification code \n sent to your number via sms."
+        android:textSize="30sp" />
+
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+    android:weightSum="4">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_1"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/primary_margin"
+        android:padding="@dimen/primary_padding"
+        android:gravity="center"
+        android:maxLength="1"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_2"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/primary_margin"
+        android:padding="@dimen/primary_padding"
+        android:gravity="center"
+        android:maxLength="1"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_3"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/primary_margin"
+        android:padding="@dimen/primary_padding"
+        android:gravity="center"
+        android:maxLength="1"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/otp_4"
+        android:layout_margin="@dimen/primary_margin"
+        android:padding="@dimen/primary_padding"
+        android:gravity="center"
+        android:maxLength="1"
+
+        />
+</LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/reSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/primary_padding"
+            android:padding="@dimen/primary_padding"
+            android:background="@color/colorgreen"
+            android:textColor="@color/colorWhite"
+            android:text="Rsend" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/primary_padding"
+            android:padding="@dimen/primary_padding"
+            android:background="@color/colorgreen"
+            android:textColor="@color/colorWhite"
+            android:text="Submit" />
+
+
+    </LinearLayout>
+</LinearLayout>

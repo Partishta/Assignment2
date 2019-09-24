@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="primary_margin">10dp</dimen>
+    <dimen name="secondary_margin">150dp</dimen>
+    <dimen name="tertiary_margin">50dp</dimen>
+    <dimen name="primary_padding">10dp</dimen>
+    <dimen name="secondary_padding">15dp</dimen>
+<!--    <dimen name="text_size">18sp</dimen>-->
+</resources>
